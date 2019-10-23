@@ -35,6 +35,7 @@ namespace Xml2Sharp
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelFooter = new System.Windows.Forms.Label();
             this.SelectFileButton = new System.Windows.Forms.Button();
             this.StartConversionButton = new System.Windows.Forms.Button();
             this.downloadButton = new System.Windows.Forms.Button();
@@ -44,24 +45,35 @@ namespace Xml2Sharp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 50);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(40, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Xml2Sharp ";
             // 
-            // label1
+            // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(40, 150);
-            this.label2.Name = "label1";
+            this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 32);
             this.label2.Visible = false;
             this.label2.ForeColor = Color.Orange;
             this.label2.TabIndex = 4;
             this.label2.Text = "file name";
+            // 
+            // labelFooter
+            // 
+            this.labelFooter.AutoSize = true;
+            this.labelFooter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFooter.Location = new System.Drawing.Point(40, 400);
+            this.labelFooter.Name = "labelFooter";
+            this.labelFooter.Size = new System.Drawing.Size(150, 32);
+            this.labelFooter.Visible = true;
+            this.labelFooter.TabIndex = 5;
+            this.labelFooter.Text = "Support: alessio.bianchini@doit.zone";
             // 
             // button2
             // 
@@ -109,6 +121,7 @@ namespace Xml2Sharp
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelFooter);
             this.Controls.Add(this.SelectFileButton);
             this.Controls.Add(this.StartConversionButton);
             this.Controls.Add(this.downloadButton);
@@ -125,6 +138,7 @@ namespace Xml2Sharp
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelFooter;
         private System.Windows.Forms.Button SelectFileButton;
         private System.Windows.Forms.Button StartConversionButton;
         private System.Windows.Forms.Button downloadButton;
